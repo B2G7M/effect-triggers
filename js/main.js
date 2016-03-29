@@ -10,6 +10,10 @@ $('.btn-collapse-expand').on('click', function () {
   $('.panel').toggleClass('collapse');
 });
 
+$('.btn-bounce').on('click', function () {
+  $('.circle').toggleClass('bounce');
+});
+
 
 
 
