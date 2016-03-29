@@ -1,9 +1,9 @@
-$('.btn-show-hide').on('click', function (e) {
+$('.btn-show-hide').on('click', function () {
   $('.box').toggleClass('show');
 });
 
-$('.btn-move').on('click', function (e) {
-  $('.diamond').toggleClass('move');
+$('.btn-move').on('click', function () {
+  $('.diamond').toggleClass('slide');
 });
 
 

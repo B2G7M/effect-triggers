@@ -49,13 +49,20 @@ div {
   width: 80px;
 
   background-color: hotpink;
-  transform:
+  transform: rotate(45deg);
+  transition: all 1s ease;
 }
 
-.move {
-  transform: translate(-150px, 0);
+.slide {
+  right: 100px;
 }
 
+@keyframes slide {
+  0% { transform: translate(0,0);
+  }
+  100% { transform: translate(-150px, 0);
+  }
+}
 
 .panel {
   max-height: 10em;
