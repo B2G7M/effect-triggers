@@ -58,10 +58,15 @@ div {
 }
 
 @keyframes slide {
-  0% { transform: translate(0,0);
+
+  0% {
+    transform: translate(0, 0);
   }
-  100% { transform: translate(-150px, 0);
+
+  100% {
+    transform: translate(-150px, 0);
   }
+
 }
 
 .panel {
@@ -88,8 +93,10 @@ div {
 }
 
 @keyframes collapse {
-  0% { max-height: 100%;}
-  100% { max-height: 0%;}
+
+  0% { max-height: 100%; }
+
+  100% { max-height: 0%; }
 }
 
 .circle {
@@ -103,17 +110,21 @@ div {
 }
 
 .bounce {
- animation: bounce 1s ease;
+  animation: bounce 1s ease;
 }
 
 @keyframes bounce {
-  0% { transform: translate(0,0); }
-  25% { transform: translate(-50px , 23px); }
-  50% { transform: translate(-70px , 10px); }
-  75% { transform: translate(-85px , 20px); }
-  100% { transform: translate(-97px , 18px); }
-}
 
+  0% { transform: translate(0, 0); }
+
+  25% { transform: translate(-50px, 23px); }
+
+  50% { transform: translate(-70px, 10px); }
+
+  75% { transform: translate(-85px, 20px); }
+
+  100% { transform: translate(-97px, 18px); }
+}
 
 .list {
   bottom: 1em;
@@ -137,6 +148,14 @@ div {
   background-color: plum;
   border: 1px solid mediumpurple;
   overflow: hidden;
+  animation: expand .5s ease forwards;
 
   color: mediumpurple;
+}
+
+@keyframes expand {
+
+  0% { max-height: 0; }
+
+  100% { max-height: 1.5rem; }
 }
